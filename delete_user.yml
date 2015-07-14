@@ -1,0 +1,7 @@
+- hosts: all
+  remote_user: $YOUR_USER
+  sudo: yes
+
+  tasks:
+  - name: Kill $USER
+    action: user name=$USERNAME state=absent remove=yes
