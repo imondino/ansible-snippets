@@ -4,5 +4,5 @@
 
   tasks:
   - name: add $USER
-    action: user name=$USER shell=/bin/bash groups=admins append=yes comment="$USER_NAME" 
+    action: user name=$USER shell=/bin/bash groups=$GROUP append=yes comment="$USER_NAME" 
   - authorized_key: user=$USER key="$KEY"
