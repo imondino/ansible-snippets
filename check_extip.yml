@@ -1,8 +1,0 @@
-- hosts: all
-  remote_user: $YOUR_USER
-
-  tasks:
-  - name: Check external ip address
-    shell: wget -qO- http://ipecho.net/plain ; echo
-    register: ip
-  - debug: msg="{{ ip.stdout }}"
