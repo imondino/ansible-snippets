@@ -3,5 +3,5 @@
   sudo: yes
 
   tasks:
-  - name: Kill $USER
+  - name: Delete $USER.
     action: user name=$USERNAME state=absent remove=yes
